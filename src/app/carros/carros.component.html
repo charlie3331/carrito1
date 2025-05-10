@@ -1,0 +1,13 @@
+<h1>Carros</h1>
+
+
+
+    
+    @for(h of misCarros;track h; let i = $index){
+        <img src="{{h.img}}">
+        <a [routerLink]="['/carro',i]">Ver mas</a>
+        <hr>
+
+    }
+
+    
